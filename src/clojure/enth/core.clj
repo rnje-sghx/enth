@@ -6,4 +6,4 @@
   [collection index]
   (if (<= index 0)
     (first collection)
-    (nth (rest collection) (- index 1))))
+    (recur (rest collection) (- index 1))))
