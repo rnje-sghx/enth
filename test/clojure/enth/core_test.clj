@@ -25,4 +25,12 @@
     (let [element    "water"
           collection ["air" element "fire" "earth"]
           index      1]
-      (is (= element (nth collection index))))))
+      (is (= element (nth collection index)))))
+
+  (testing "GIVEN a String with more than one Characters
+            AND 2 as Index
+            IT SHOULD return Character at Index as value"
+    (let [character \S
+          string    "NASA"
+          index     2]
+      (is (= character (nth string index))))))
