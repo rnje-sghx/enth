@@ -33,4 +33,12 @@
     (let [character \S
           string    "NASA"
           index     2]
-      (is (= character (nth string index))))))
+      (is (= character (nth string index)))))
+
+  (testing "GIVEN a Collection with limited Size
+            AND Size + 5 as Index
+            IT SHOULD return Nil as value"
+    (let [size       10
+          collection (range 10)
+          index      (+ size 5)]
+      (is (nil? (nth collection index))))))
