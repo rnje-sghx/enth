@@ -1,0 +1,41 @@
+# OS & Project Ignores
+.DS_Store
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+Desktop.ini
+$RECYCLE.BIN
+Icon
+
+# Text Editor & IDE Ignores
+*~
+\#*\#
+.\#*
+/.idea
+*.iml
+*.sublime-workspace
+*.sublime-project
+
+# Java & JVM's Ignores
+/.jvm-*
+pom.xml.asc
+*.jar
+*.class
+
+# Clojure's Ignores
+/log
+/logs
+/tmp
+/temp
+/target
+/vendor
+/classes
+/checkouts
+/.lein-*
+/.nrepl-*
+/out
+/output
+
+# Project's Ignores
+test/user.clj
